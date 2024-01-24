@@ -1,0 +1,34 @@
+Package: FPSV
+Type: Package
+Title: Functional profiling of somatic variation
+Version: 0.1.0
+Authors@R: 
+    person(given = "Simo",  
+           family = "Kitanovski",
+           role = c("aut", "cre"),
+           email = "simokitanovski@gmail.com")
+Description: Given a number of samples containing somatic variants, e.g. 
+    obtained by genome sequencing of patients with different cancer types,
+    FPSV quantifies the enrichment of variants with respect to different 
+    functional groups (hallmark processes, pathways, gene ontology sets).
+    This enables quantitative comparison of the different samples.
+License: GPL-3
+Depends:
+    R (>= 4.3.0)
+Imports:
+    methods,
+    stats,
+    utils
+Suggests:
+    BiocStyle,
+    knitr,
+    testthat,
+    ggplot2,
+    patchwork,
+    ggrepel
+Encoding: UTF-8
+NeedsCompilation: no
+biocViews: Clustering, Software, Classification
+VignetteBuilder: knitr
+URL: https://github.com/snaketron/FPSV
+BugReports: https://github.com/snaketron/FPSV/issues
